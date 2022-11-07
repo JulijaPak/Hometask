@@ -2,9 +2,9 @@
 
 Hometask: Integration testing on FE
 
-## Instalation 
+## Installation 
 
-Instal modules with this command:
+Install modules with this command:
 
 ```bash
 yarn install
@@ -12,7 +12,7 @@ yarn install
 
 ## Tests
 
-To lunch tests use following command:
+To launch tests use following command:
 
 ```bash
 yarn test
