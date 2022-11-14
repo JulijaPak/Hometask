@@ -12,6 +12,10 @@ test('should calculate area of rectangle', () => {
 })
 
 test('should console.log info about rectangle perimetr and area', () => {
-    const info = getRectangleInfo(5, 5);
-    expect(info).toBe('The perimeter of a rectangle is 20 and the area is 25');
+    jest.spyOn(console, 'log');
+    expect(console.log.mock.calls.length).toBe(0);
+    getRectangleInfo(5, 5);
+    expect(console.log.mock.calls.length).toBe(1);
+    expect(console.log.mock.calls[0][0]).toBe("The perimeter of a rectangle is 20 and the area is 25");
+    jest.clearAllMocks();
 })
